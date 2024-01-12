@@ -5,6 +5,10 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshiv007/react-accordion-in.git"
+  },
   "keywords": [
     "react",
     "react-component",
@@ -14,6 +18,10 @@
   ],
   "author": "Shiv",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamshiv007/react-accordion-in/issues"
+  },
+  "homepage": "https://github.com/iamshiv007/react-accordion-in#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -22,6 +30,7 @@
     "react": "^18.2.0",
     "rollup": "^4.9.5",
     "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   },
   "main": "dist/cjs/index.js",
