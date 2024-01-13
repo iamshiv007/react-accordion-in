@@ -1,12 +1,12 @@
 import React, { FC, ReactNode, useState } from 'react';
 import { Default } from '../utils';
-import { IExperienceBoxProps } from '../@types';
+import { IAccordionBoxProps } from '../@types';
 import { CompanyLocation } from './CompanyLocation';
 import { RoleFromto } from './RoleFromto';
 import { Details } from './Details';
 import { ArrowBtn } from './ArrowBtn';
 
-export const ExperienceBox: FC<IExperienceBoxProps> = ({
+export const AccordionBox: FC<IAccordionBoxProps> = ({
   companyName,
   location,
   role,

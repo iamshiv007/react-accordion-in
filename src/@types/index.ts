@@ -4,7 +4,7 @@ export type ITheme = 'light' | 'dark';
 export type ISize = 'large' | 'small' | 'medium';
 export type IDirection = 'left' | 'right' | 'center' | 'sideBySide';
 
-export interface IExperienceBoxProps {
+export interface IAccordionBoxProps {
   companyName: string;
   location?: string;
   role?: string;
@@ -16,8 +16,8 @@ export interface IExperienceBoxProps {
   direction?: IDirection;
 }
 
-export interface IExperienceContainerProps {
-  experiences: IExperienceBoxProps[];
+export interface IAccordionContainerProps {
+  experiences: IAccordionBoxProps[];
   theme?: ITheme;
   size?: ISize;
   direction?: IDirection;

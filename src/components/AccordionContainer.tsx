@@ -1,18 +1,18 @@
 import React from 'react';
-import { IExperienceContainerProps } from '../@types';
-import { ExperienceBox } from './ExperienceBox';
+import { IAccordionContainerProps } from '../@types';
+import { AccordionBox } from './AccordionBox';
 
-const ExperienceContainer = ({
+const AccordionContainer = ({
   experiences,
   theme = 'light',
   direction = 'sideBySide'
-}: IExperienceContainerProps) => {
+}: IAccordionContainerProps) => {
   return (
     <div>
       {experiences.map((expe, i) => {
         return (
           <div key={i}>
-            <ExperienceBox
+            <AccordionBox
               direction={direction}
               {...expe}
               theme={theme}
@@ -25,4 +25,4 @@ const ExperienceContainer = ({
   );
 };
 
-export default ExperienceContainer;
+export default AccordionContainer;
