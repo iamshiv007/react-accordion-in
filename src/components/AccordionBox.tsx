@@ -7,10 +7,10 @@ import { Details } from './Details';
 import { ArrowBtn } from './ArrowBtn';
 
 export const AccordionBox: FC<IAccordionBoxProps> = ({
-  companyName,
+  heading,
+  subHeading,
   location,
-  role,
-  fromTo,
+  time,
   details,
   even,
   theme = 'light',
@@ -26,8 +26,8 @@ export const AccordionBox: FC<IAccordionBoxProps> = ({
       ${
         direction === 'sideBySide'
           ? even
-            ? `${Default.CSS_NAMESPACE}__main-container-flex--end`
-            : `${Default.CSS_NAMESPACE}__main-container-flex--start`
+            ? `${Default.CSS_NAMESPACE}__main-container-flex--start`
+            : `${Default.CSS_NAMESPACE}__main-container-flex--end`
           : ''
       }
       ${
@@ -51,9 +51,9 @@ export const AccordionBox: FC<IAccordionBoxProps> = ({
       <div
         className={`${Default.CSS_NAMESPACE}__container ${Default.CSS_NAMESPACE}__container-theme--${theme}`}
       >
-        <CompanyLocation companyName={companyName} location={location} />
+        <CompanyLocation heading={heading} location={location} />
 
-        <RoleFromto role={role} fromTo={fromTo} theme={theme} />
+        <RoleFromto subHeading={subHeading} time={time} theme={theme} />
 
         <Details details={details} selectedDetails={selectedDetails} />
       </div>

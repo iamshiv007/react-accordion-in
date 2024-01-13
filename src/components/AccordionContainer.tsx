@@ -3,18 +3,18 @@ import { IAccordionContainerProps } from '../@types';
 import { AccordionBox } from './AccordionBox';
 
 const AccordionContainer = ({
-  experiences,
+  accordionData,
   theme = 'light',
   direction = 'sideBySide'
 }: IAccordionContainerProps) => {
   return (
     <div>
-      {experiences.map((expe, i) => {
+      {accordionData.map((data, i) => {
         return (
           <div key={i}>
             <AccordionBox
               direction={direction}
-              {...expe}
+              {...data}
               theme={theme}
               even={i % 2 === 0}
             />

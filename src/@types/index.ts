@@ -5,10 +5,10 @@ export type ISize = 'large' | 'small' | 'medium';
 export type IDirection = 'left' | 'right' | 'center' | 'sideBySide';
 
 export interface IAccordionBoxProps {
-  companyName: string;
+  heading: string;
+  subHeading?: string;
   location?: string;
-  role?: string;
-  fromTo?: string;
+  time?: string;
   details: string | ReactNode;
   theme?: ITheme;
   even?: boolean;
@@ -17,7 +17,7 @@ export interface IAccordionBoxProps {
 }
 
 export interface IAccordionContainerProps {
-  experiences: IAccordionBoxProps[];
+  accordionData: IAccordionBoxProps[];
   theme?: ITheme;
   size?: ISize;
   direction?: IDirection;

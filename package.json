@@ -1,6 +1,6 @@
 {
   "name": "react-accordion-in",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Accordion component for react",
   "scripts": {
     "build": "rollup -c",

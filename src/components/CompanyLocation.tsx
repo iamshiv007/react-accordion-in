@@ -3,17 +3,17 @@ import { LocationSvg } from '../icons';
 import { Default } from '../utils';
 
 interface ICompanyLocation {
-  companyName: string;
+  heading: string;
   location?: string;
 }
 
 export const CompanyLocation = ({
-  companyName,
+  heading,
   location
 }: ICompanyLocation) => {
   return (
     <div className={`${Default.CSS_NAMESPACE}__company-location-wrapper`}>
-      <p className={`${Default.CSS_NAMESPACE}__company-name`}>{companyName}</p>
+      <p className={`${Default.CSS_NAMESPACE}__company-name`}>{heading}</p>
       {location && (
         <p className={`${Default.CSS_NAMESPACE}__location-wrapper`}>
           <LocationSvg /> {location}
